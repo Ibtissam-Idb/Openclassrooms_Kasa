@@ -2,6 +2,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, /*Route*/ } from "react-router-dom";
+import "./style.scss";
 
 // Import pages
 /*import Home from "./pages/Home";
@@ -20,9 +21,11 @@ const root = createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <Router>
+            <div style={{ paddingRight: 50, paddingLeft: 50, paddingTop: 30 }}>
         <Header />
             <Routes>
             </Routes>
+            </div>
         </Router>
     </React.StrictMode>
 )

@@ -1,0 +1,27 @@
+@use "../../style.scss";
+
+* {
+    color: style.$primary;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.header_banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    width: 200px;
+    height: 60px;
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.nav_item--underlined {
+    text-decoration: underline;
+}
