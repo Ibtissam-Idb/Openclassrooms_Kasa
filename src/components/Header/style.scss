@@ -5,11 +5,11 @@
     justify-content: space-between;
     color: style.$primary;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 20px;
     align-items: center;
     padding: 50px 0px;
     @media (max-width: style.$breakpoint_phone) {
-        font-size: 14px;
+        font-size: 10px;
         padding: 20px 0px;
         text-transform: uppercase;
         font-weight: 600;
@@ -20,7 +20,7 @@
     width: 200px;
     height: auto;
     @media (max-width: style.$breakpoint_phone) {
-        width: 109px;
+        width: 85px;
     }
 }
 

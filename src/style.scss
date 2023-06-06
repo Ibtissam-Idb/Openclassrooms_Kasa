@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 $primary: #FF6060;
+$secondary: #F6F6F6;
 $breakpoint_phone: 767px;
 
 a {
@@ -19,7 +20,7 @@ html, body {
 }
 
 .body_padding {
-    padding: 0px 50px;
+    padding: 0px 80px;
     @media (max-width: $breakpoint_phone) {
         padding: 0px 15px;
     }

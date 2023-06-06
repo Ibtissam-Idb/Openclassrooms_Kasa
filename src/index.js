@@ -1,12 +1,12 @@
 // Import React
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Routes, /*Route*/ } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./style.scss";
 
 // Import pages
-/*import Home from "./pages/Home";
-import Rental from "./pages/Rental";
+import Home from "./pages/Home";
+/*import Rental from "./pages/Rental";
 import About from "./pages/About";
 import Notfound from "./pages/Notfound";*/
 
@@ -24,6 +24,7 @@ root.render(
             <div className="body_padding">
                 <Header />
                 <Routes>
+                    <Route path="/" element={<Home/>} />
                 </Routes>
             </div>
                 <Footer />
