@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-* {
-    font-family : Montserrat;
-}
-
 $primary: #FF6060;
+$breakpoint_phone: 767px;
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+html, body {
+    margin: 0;
+    font-size: 17px;
+    font-family : Montserrat;
+}
+
+.body_padding {
+    padding: 0px 50px;
+    @media (max-width: $breakpoint_phone) {
+        padding: 0px 15px;
+    }
 }

@@ -12,7 +12,7 @@ import Notfound from "./pages/Notfound";*/
 
 // Import Components
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 // Config root
 const root = createRoot(document.getElementById("root"));
@@ -21,11 +21,12 @@ const root = createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <Router>
-            <div style={{ paddingRight: 50, paddingLeft: 50, paddingTop: 30 }}>
-        <Header />
-            <Routes>
-            </Routes>
+            <div className="body_padding">
+                <Header />
+                <Routes>
+                </Routes>
             </div>
+                <Footer />
         </Router>
     </React.StrictMode>
 )

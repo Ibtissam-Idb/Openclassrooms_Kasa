@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo_color.png";
 
 function Header() {
 

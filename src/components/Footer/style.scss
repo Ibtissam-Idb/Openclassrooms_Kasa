@@ -1,0 +1,27 @@
+@use "../../style.scss";
+
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 60px 50px 20px 50px;
+    justify-content: center;
+    text-align: center;
+    @media (max-width: style.$breakpoint_phone) {
+        padding: 30px 25px 10px 25px;
+    }
+}
+
+.footer_text {
+    margin-top: 20px;
+    @media (max-width: style.$breakpoint_phone) {
+        font-size: 12px;
+    }
+}
+
+.footer_logo {
+    @media (max-width: style.$breakpoint_phone) {
+        width: 66px;
+        height: auto;
+    }
+}
