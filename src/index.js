@@ -6,9 +6,9 @@ import "./style.scss";
 
 // Import pages
 import Home from "./pages/Home";
-/*import Rental from "./pages/Rental";
+import Rental from "./pages/Rental";
 import About from "./pages/About";
-import Notfound from "./pages/Notfound";*/
+//import Notfound from "./pages/Notfound";
 
 // Import Components
 import Header from "./components/Header";
@@ -25,6 +25,8 @@ root.render(
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home/>} />
+                    <Route path="/about" element={<About/>} />
+                    <Route path="/rental" element={<Rental/>} />
                 </Routes>
             </div>
                 <Footer />

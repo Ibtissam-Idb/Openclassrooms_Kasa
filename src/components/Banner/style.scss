@@ -1,0 +1,69 @@
+@use "../../style.scss";
+
+$text_wrap_breakpoint: 415px;
+
+// GENERAL STYLE
+
+.home, .about {
+    padding: 25px 0px;
+    @media (max-width: style.$breakpoint_phone) {
+        padding: 20px 0px 0px;
+    }
+}
+
+.banner {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    @media (max-width: style.$breakpoint_phone) {
+        text-align: start;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.home h1 {
+    font-weight: 400;
+    margin: 40px 0px;
+    font-size: 30px;
+    @media (max-width: style.$breakpoint_phone) {
+        margin: 20px 0px;
+    }
+    @media (max-width: $text_wrap_breakpoint) {
+        margin: 0px;
+        font-size: 20px;
+    }
+}
+
+.banner_image {
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 20px;
+}
+
+.banner_image_overlay {
+    background-color: rgba(0, 0, 0,0.3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+br.display_phone {
+    display: none;
+    @media (max-width: $text_wrap_breakpoint) {
+        display: block;
+    }
+}
+
+
+// ABOUT PAGE STYLE
+
+.about .banner_image_overlay {
+    padding: 78px;
+    @media (max-width: style.$breakpoint_phone) {
+        padding: 60px;
+    }
+    @media (max-width: $text_wrap_breakpoint) {
+        padding: 44px;
+    }
+}

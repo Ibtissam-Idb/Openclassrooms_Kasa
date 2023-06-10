@@ -2,59 +2,6 @@
 
 $text_wrap_breakpoint: 415px;
 
-// BANNER
-
-.home {
-    padding: 25px 0px 75px;
-    @media (max-width: style.$breakpoint_phone) {
-        padding: 20px 0px;
-    }
-}
-
-.home_banner {
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 35px;
-    color: #fff;
-    @media (max-width: style.$breakpoint_phone) {
-        text-align: start;
-        font-size: 20px;
-    }
-}
-
-.home h1 {
-    font-weight: 400;
-    margin: 40px 0px;
-    font-size: 30px;
-    @media (max-width: style.$breakpoint_phone) {
-        margin: 20px 0px;
-    }
-    @media (max-width: $text_wrap_breakpoint) {
-        margin: 0px;
-        font-size: 20px;
-    }
-}
-
-.banner_image {
-    background-image: url("../../assets/home_banner.png");
-    background-size: cover;
-    background-position: 100%;
-    border-radius: 20px;
-}
-
-.banner_image_overlay {
-    background-color: rgb(0, 0, 0,0.3);
-    border-radius: 20px;
-    padding: 20px;
-}
-
-br.display_phone {
-    display: none;
-    @media (max-width: $text_wrap_breakpoint) {
-        display: block;
-    }
-}
-
 // RENTALS
 
 .rentals {
@@ -69,6 +16,8 @@ br.display_phone {
     background-color: style.$secondary;
     @media (max-width: style.$breakpoint_phone) {
         flex-direction: column;
+        background-color: #fff;
+        padding: 15px 0px;
     }
 }
 
@@ -90,11 +39,6 @@ br.display_phone {
     background-size: cover;
     @media (max-width: style.$breakpoint_phone) {
         width: 100%;
-    }
-    h2 {
-        max-width: 80%;
-        font-size: 18px;
-        margin-top: 0;
     }
     a {
         width: 100%;

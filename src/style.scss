@@ -22,6 +22,15 @@ html, body {
 .body_padding {
     padding: 0px 80px;
     @media (max-width: $breakpoint_phone) {
-        padding: 0px 15px;
+        padding: 0px 6%;
+    }
+}
+
+h2 {
+    max-width: 80%;
+    font-size: 18px;
+    margin-top: 0;
+    @media (max-width: $breakpoint_phone) {
+        font-size: 1rem;
     }
 }

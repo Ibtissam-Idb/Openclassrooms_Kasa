@@ -1,12 +1,11 @@
 import "./style.scss";
 import Rentals from "../../models/rentals.json";
-import { Link } from "react-router-dom";
+import Banner from "../../components/Banner/index.jsx";
 
 function Home() {
 
-    const rentals = Rentals;
-    const rentalPiece = rentals.map((rental) =>
-        <div className="rental" style={{ backgroundImage: "url(" + rental.cover + ")" }}>
+    const rentalPiece = Rentals.map((rental) =>
+        <div key={ rental.id } className="rental" style={{ backgroundImage: "url(" + rental.cover + ")" }}>
             <div className="rental_linear_overlay">
                 <a href={ window.location.href + "rental?id=" + rental.id }>
                 <h2 className="rental_name">{rental.title}</h2>
@@ -18,13 +17,7 @@ function Home() {
     return (
         <section className="home">
 
-            <article className="home_banner">
-                <div className="banner_image">
-                    <div className="banner_image_overlay">
-                        <h1>Chez vous,<br className="display_phone" /> partout et ailleurs</h1>
-                    </div>
-                </div>
-            </article>
+            <Banner />
 
             <article className="rentals">
                 {rentalPiece}

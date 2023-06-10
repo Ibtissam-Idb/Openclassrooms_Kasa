@@ -1,0 +1,44 @@
+@use "../../style.scss";
+
+.collapse_group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-bottom: 100px;
+}
+
+.collapse_button {
+    background-color: style.$primary;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.collapse_title {
+    margin: 0px;
+}
+
+.collapse_text_container {
+    padding: 20px 20px 10px;
+    text-align: justify;
+    color: style.$primary;
+    background-color: style.$secondary;
+    display: none;
+    &--open {
+        display: block;
+    }
+    @media (max-width: style.$breakpoint_phone) {
+        padding: 20px 20px 15%;
+    }
+}
+
+.collapse_text {
+    margin: 0px;
+    line-height: 1.3rem;
+    @media (max-width: style.$breakpoint_phone) {
+        font-size: 16px;
+    }
+}

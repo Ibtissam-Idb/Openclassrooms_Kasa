@@ -1,0 +1,29 @@
+.rental_slider {
+    height: 450px;
+}
+
+.slider_image {
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.slider_text {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.slide_index {
+    color: #fff;
+    text-align: center;
+    font-size: 27px;
+}
+
+.slider_arrow {
+    object-fit: contain;
+    width: 5%;
+    align-self: center;
+}
