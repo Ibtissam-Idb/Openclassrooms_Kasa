@@ -15,6 +15,9 @@
     padding: 10px 20px;
     border-radius: 5px;
     align-items: center;
+    @media (max-width: style.$breakpoint_phone) {
+        padding: 5px 10px;
+    }
 }
 
 .collapse_title {
@@ -26,19 +29,20 @@
     text-align: justify;
     color: style.$primary;
     background-color: style.$secondary;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: none;
     &--open {
         display: block;
     }
     @media (max-width: style.$breakpoint_phone) {
-        padding: 20px 20px 15%;
+        padding: 10px 10px 15%;
     }
 }
 
 .collapse_text {
     margin: 0px;
-    line-height: 1.3rem;
     @media (max-width: style.$breakpoint_phone) {
-        font-size: 16px;
+        line-height: normal;
     }
 }

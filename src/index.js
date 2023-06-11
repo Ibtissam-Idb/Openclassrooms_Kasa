@@ -8,7 +8,7 @@ import "./style.scss";
 import Home from "./pages/Home";
 import Rental from "./pages/Rental";
 import About from "./pages/About";
-//import Notfound from "./pages/Notfound";
+import Notfound from "./pages/Notfound";
 
 // Import Components
 import Header from "./components/Header";
@@ -24,12 +24,13 @@ root.render(
             <div className="body_padding">
                 <Header />
                 <Routes>
-                    <Route path="/" element={<Home/>} />
-                    <Route path="/about" element={<About/>} />
-                    <Route path="/rental" element={<Rental/>} />
+                    <Route path="/" element={ <Home/> } />
+                    <Route path="/about" element={ <About/> } />
+                    <Route path="/rental" element={ <Rental/> } />
+                    <Route path="*" element={ <Notfound/> } />
                 </Routes>
             </div>
-                <Footer />
+            <Footer />
         </Router>
     </React.StrictMode>
 )

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 $primary: #FF6060;
 $secondary: #F6F6F6;
@@ -13,10 +13,18 @@ ul, ol {
     list-style-type: none;
 }
 
+html, body, #root {
+    height: 100%;
+}
+
 html, body {
     margin: 0;
-    font-size: 17px;
+    font-size: 24px;
     font-family : Montserrat;
+    @media (max-width: $breakpoint_phone) {
+        font-size: 12px;
+        line-height: 17px;
+    }
 }
 
 .body_padding {
@@ -26,11 +34,20 @@ html, body {
     }
 }
 
+h1 {
+    font-size: 48px;
+    line-height: 68px;
+    @media (max-width: $breakpoint_phone) {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
 h2 {
     max-width: 80%;
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 0;
     @media (max-width: $breakpoint_phone) {
-        font-size: 1rem;
+        font-size: 13px;
     }
 }
