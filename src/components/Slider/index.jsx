@@ -1,10 +1,11 @@
 import "./style.scss";
-import Rentals from "../../models/rentals.json";
 import { useState } from "react";
+import Rentals from "../../models/rentals.json";
 import arrowBack from "../../assets/arrow_back.png";
 import arrowForward from "../../assets/arrow_forward.png";
 
 function Slider() {
+
     // Get pictures from the correct rental
     const currentURL = new URL(window.location.href);
     const URLId = currentURL.searchParams.get("id");

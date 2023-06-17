@@ -24,19 +24,13 @@ root.render(
             <div className="body_padding">
                 <Header />
                 <Routes>
-                    <Route path="/" element={ <Home/> } />
-                    <Route path="/about" element={ <About/> } />
-                    <Route path="/rental" element={ <Rental/> } />
-                    <Route path="*" element={ <Notfound/> } />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/rental" element={<Rental />} />
+                    <Route path="*" element={<Notfound />} />
                 </Routes>
             </div>
             <Footer />
         </Router>
     </React.StrictMode>
 )
-
-/*<Route path="/" element={<Home/>} />
-                <Route path="/rental" element={<Rental/>} />
-                <Route path="/about" element={<About/>} />
-                <Route path="/notfound" element={<Notfound/>} />
-                <Footer />*/

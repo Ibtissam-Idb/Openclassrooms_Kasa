@@ -1,5 +1,10 @@
+@use "../../style.scss";
+
 .rental_slider {
     height: 450px;
+    @media (max-width: style.$breakpoint_phone) {
+        height: 250px;
+    }
 }
 
 .slider_image {
@@ -20,6 +25,9 @@
     color: #fff;
     text-align: center;
     font-size: 27px;
+    @media (max-width: style.$breakpoint_phone) {
+        display:none;
+    }
 }
 
 .slider_arrow {

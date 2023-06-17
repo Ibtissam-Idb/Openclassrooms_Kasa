@@ -21,7 +21,7 @@ function Collapse({ title, text }) {
                     style={{ transform: closed ? "rotate(180deg)" : "rotate(0)" }} />
             </div>
             <div className={ closed ? "collapse_text_container collapse_text_container--open" : "collapse_text_container" }>
-                <p className="collapse_text">{ text }</p>
+                <div className="collapse_text">{ text }</div>
             </div>
         </div>
     )
@@ -29,7 +29,10 @@ function Collapse({ title, text }) {
 
 Collapse.propTypes = {
     title: propTypes.string,
-    text: propTypes.string
+    text: propTypes.oneOfType([
+        propTypes.string,
+        propTypes.element
+    ])
 }
 
 export default Collapse;

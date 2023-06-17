@@ -1,0 +1,137 @@
+@use "../../style.scss";
+
+.rental_description {
+    color: style.$primary;
+
+    h1 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 51px;
+        margin: 0;
+        @media (max-width: style.$breakpoint_phone) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    p {
+        margin: 0;
+        @media (max-width: style.$breakpoint_phone) {
+         font-size: 14px;   
+        }
+    }
+
+    .rental_presentation {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        @media (max-width: style.$breakpoint_phone) {
+            flex-direction: column;
+        }
+    }
+
+    .rental_presentation--col60 {
+        width: 60%;
+        @media (max-width: style.$breakpoint_phone) {
+            width: 100%;
+        }
+    }
+
+    .rental_presentation--col40 {
+        width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 20px;
+    @media (max-width: style.$breakpoint_phone) {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    }
+
+    .tag_element {
+        background-color: style.$primary;
+        color: #fff;
+        padding: 3px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        @media (max-width: style.$breakpoint_phone) {
+         font-size: 10px;
+         border-radius: 5px;   
+        }
+    }
+
+    .tag_list {
+        padding: 0;
+        display: flex;
+        column-gap: 25px;
+        align-items: center;
+        margin: 20px 0px 30px;
+        @media (max-width: style.$breakpoint_phone) {
+            column-gap: 10px;
+            flex-wrap: wrap;
+            row-gap: 5px;
+        }
+    }
+
+    .host_profile {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .host_picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-size: cover;
+        margin: 0;
+        @media (max-width: style.$breakpoint_phone) {
+         width: 32px;
+         height: 32px;   
+        }
+    }
+
+    .star_icon {
+        width: 30px;
+        margin-left: 20px;
+        @media (max-width: style.$breakpoint_phone) {
+            margin-left: 0;
+            margin-right: 10px;
+            width: 18px;
+        }
+    }
+
+    .rental_collapse {
+        display: flex;
+        column-gap: 20px;
+        @media (max-width: style.$breakpoint_phone) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    .collapse {
+        width: 50%;
+        @media (max-width: style.$breakpoint_phone) {
+            width: 100%;
+        }
+    }
+
+    .collapse_text_container {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        @media (max-width: style.$breakpoint_phone) {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+    
+}
+
+.rental_section {
+    margin-bottom: 50px;
+}

@@ -11,6 +11,8 @@ a {
 
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 html, body, #root {
@@ -47,6 +49,7 @@ h2 {
     max-width: 80%;
     font-size: 24px;
     margin-top: 0;
+    font-weight: 500;
     @media (max-width: $breakpoint_phone) {
         font-size: 13px;
     }
