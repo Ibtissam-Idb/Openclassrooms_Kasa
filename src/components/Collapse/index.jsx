@@ -11,17 +11,17 @@ function Collapse({ title, text }) {
         setClosed(!closed);
     }
 
-    return(
+    return (
         <div className="collapse">
             <div className="collapse_button">
-                <h2 className="collapse_title">{ title }</h2>
-                <img className="collapse_arrow" src={ arrowCollapse }
-                    alt={ closed ? "Montrer le texte" : "Cacher le texte" }
-                    onClick={ collapse }
+                <h2 className="collapse_title">{title}</h2>
+                <img className="collapse_arrow" src={arrowCollapse}
+                    alt={closed ? "Montrer le texte" : "Cacher le texte"}
+                    onClick={collapse}
                     style={{ transform: closed ? "rotate(180deg)" : "rotate(0)" }} />
             </div>
-            <div className={ closed ? "collapse_text_container collapse_text_container--open" : "collapse_text_container" }>
-                <div className="collapse_text">{ text }</div>
+            <div className={closed ? "collapse_text_container collapse_text_container--open" : "collapse_text_container"}>
+                <div className="collapse_text">{text}</div>
             </div>
         </div>
     )

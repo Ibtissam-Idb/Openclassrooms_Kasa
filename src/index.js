@@ -19,18 +19,18 @@ const root = createRoot(document.getElementById("root"));
 
 // Render
 root.render(
-  
-        <Router>
-            <div className="body_padding">
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/rental/:id" element={<Rental />} />
-                    <Route path="*" element={<Notfound />} />
-                </Routes>
-            </div>
-            <Footer />
-        </Router>
-   
+
+    <Router>
+        <div className="body_padding">
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/rental/:id" element={<Rental />} />
+                <Route path="*" element={<Notfound />} />
+            </Routes>
+        </div>
+        <Footer />
+    </Router>
+
 )

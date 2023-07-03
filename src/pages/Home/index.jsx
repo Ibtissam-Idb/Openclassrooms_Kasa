@@ -9,7 +9,7 @@ function Home() {
     const [rentals, setRentals] = useState([]);
 
     useEffect(() => {
-        async function getAppartment(){
+        async function getAppartment() {
             const appartment = await fetchAppartment();
             setRentals(appartment)
         }

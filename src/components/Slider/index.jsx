@@ -6,18 +6,18 @@ import arrowForward from "../../assets/arrow_forward.png";
 import { fetchAppartment } from "../../service";
 
 function Slider() {
-  const {id} = useParams();
+  const { id } = useParams();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slides, setSlides] = useState([]);
 
   useEffect(() => {
-    async function getAppartment(){
-        const appartment = await fetchAppartment();
-        const slidePictures = appartment.find(appart=>appart.id === id).pictures
-        setSlides(slidePictures)
+    async function getAppartment() {
+      const appartment = await fetchAppartment();
+      const slidePictures = appartment.find(appart => appart.id === id).pictures
+      setSlides(slidePictures)
     }
     getAppartment();
-}, []);
+  }, [id]);
 
 
   const goToPrevious = () => {

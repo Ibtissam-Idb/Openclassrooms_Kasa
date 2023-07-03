@@ -2,7 +2,7 @@ import "./style.scss";
 
 function Notfound() {
 
-    return(
+    return (
         <section className="notfound">
 
             <article className="notfound_message">

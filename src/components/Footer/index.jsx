@@ -3,7 +3,7 @@ import logo from "../../assets/logo_white.png";
 
 function Footer() {
 
-    return(
+    return (
         <footer>
             <div className="footer_banner">
                 <img src={logo} alt="Logo Kasa" className="footer_logo"></img>
