@@ -1,15 +1,27 @@
 import "./style.scss";
-import Rentals from "../../models/rentals.json";
+import { useEffect, useState } from "react";
 import Banner from "../../components/Banner/index.jsx";
+import { NavLink } from "react-router-dom";
+import { fetchAppartment } from "../../service";
 
 function Home() {
 
-    const rentalPiece = Rentals.map((rental) =>
-        <div key={ rental.id } className="rental" style={{ backgroundImage: "url(" + rental.cover + ")" }}>
+    const [rentals, setRentals] = useState([]);
+
+    useEffect(() => {
+        async function getAppartment(){
+            const appartment = await fetchAppartment();
+            setRentals(appartment)
+        }
+        getAppartment();
+    }, []);
+
+    const rentalPiece = rentals.map((rental) =>
+        <div key={rental.id} className="rental" style={{ backgroundImage: "url(" + rental.cover + ")" }}>
             <div className="rental_linear_overlay">
-                <a href={ window.location.href + "rental?id=" + rental.id }>
-                <h2 className="rental_name">{rental.title}</h2>
-                </a>
+                <NavLink to={`rental/${rental.id}`}>
+                    <h2 className="rental_name">{rental.title}</h2>
+                </NavLink>
             </div>
         </div>
     )
